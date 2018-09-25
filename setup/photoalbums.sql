@@ -6,6 +6,9 @@
 -- Generation Time: Nov 06, 2014 at 10:09 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
+create database photoalbums;
+
+USE photoalbums;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
