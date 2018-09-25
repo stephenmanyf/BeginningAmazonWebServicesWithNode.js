@@ -28,8 +28,8 @@ router.get('/user/:user', function(req, res) {
 	});
 });
 
-/* POST user login. */
-router.post('/login', function(req, res) {
+/* GET user login. */
+router.get('/login', function(req, res) {
 	if(req.param('username') && req.param('password') ){
 		var params = {
 			username: req.param('username').toLowerCase(),
