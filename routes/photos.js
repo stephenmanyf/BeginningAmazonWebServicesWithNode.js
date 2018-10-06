@@ -22,7 +22,7 @@ router.get('/id/:id', function(req, res) {
 
 /* GET photo search */
 router.get('/search', function(req, res) {
-	res.header('Cache-Control', 'no-cache', 'no-store'); //Set header to make neither the browser nor CloudFront caches the response
+	res.header('Cache-Control', 'no-cache, no-store'); //Set header to make neither the browser nor CloudFront caches the response
 	if (req.param('query')) {
 		var params = {
 			query : req.param('query')
