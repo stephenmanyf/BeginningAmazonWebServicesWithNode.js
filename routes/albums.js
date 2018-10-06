@@ -4,6 +4,10 @@ var model 		= require('./../lib/model/model-albums');
 
 /* GET album by ID */
 router.get('/id/:albumID', function(req, res) {
+	//Set header to set 10 sec expiry
+	res.header("Cache-Control", "public, max-age=10");
+	res.header("Expires", new Date(Date.now() + 10000).toUTCString());
+
 	if(req.param('albumID')){
 		var params = {
 			albumID : req.param('albumID')
