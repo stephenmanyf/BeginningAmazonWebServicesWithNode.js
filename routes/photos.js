@@ -102,7 +102,7 @@ router.post('/delete', function(req, res) {
 function uploadPhoto(params, callback) {
 	fs.readFile(params.filePath, function (err, imgData) {
 		if (err) {
-			callback(erro);
+			callback(err);
 		} else {
 			var contentType = 'image/jpeg';
 			var uploadPath = 'uploads/' + params.newFilename;
